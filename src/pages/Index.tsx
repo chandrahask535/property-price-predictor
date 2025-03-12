@@ -26,11 +26,13 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex flex-col">
       <NavBar />
-      <Hero />
-      <PredictionForm />
-      <MarketTrends />
+      <main className="flex-grow">
+        <Hero />
+        <PredictionForm />
+        <MarketTrends />
+      </main>
       <Footer />
     </div>
   );
